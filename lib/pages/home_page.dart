@@ -11,7 +11,11 @@ class Homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text('Anubhav'),
+          child: Text(
+            'Home Screen',
+            style: TextStyle(
+                fontSize: 40, color: Colors.red, fontWeight: FontWeight.bold),
+          ),
         ),
       ),
       drawer: Drawer(),

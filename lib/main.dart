@@ -1,4 +1,7 @@
-import 'package:demo2app/home_page.dart';
+import 'dart:ffi';
+
+import 'package:demo2app/pages/home_page.dart';
+import 'package:demo2app/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +14,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Homepage(),
+      //commenting this home:Homepage() becauss homepage directory is used in routes
+      //home: Homepage(),
+      themeMode: ThemeMode.dark,
+      theme: ThemeData(primarySwatch: Colors.red),
+      darkTheme: ThemeData(
+          //brightness: Brightness.dark,
+          //primarySwatch: Colors.brown),
+          ),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => LoginPage(),
+        "/home": (context) => Homepage(),
+        "/login": (context) => LoginPage(),
+      },
     );
   }
 }
