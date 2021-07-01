@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
-  const Homepage({Key? key}) : super(key: key);
+  //const Homepage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Leggooo"),
+        title: Text(
+          "Catalog",
+          style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.purple,
+        actions: [Icon(Icons.login), Icon(Icons.logout)],
+        //leading: Icon(Icons.holiday_village),
       ),
       body: Center(
         child: Container(
@@ -18,7 +25,14 @@ class Homepage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(),
+
+      //for adding drawer in appbar => drawer: Drawer(),
+
+      drawer: Drawer(
+        child: Column(
+          children: [Container()],
+        ),
+      ),
     );
   }
 }
