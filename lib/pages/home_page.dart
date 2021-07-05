@@ -9,7 +9,7 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "Catalog",
-          style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
         backgroundColor: Colors.purple,

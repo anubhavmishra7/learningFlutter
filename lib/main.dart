@@ -2,6 +2,7 @@
 
 import 'package:demo2app/pages/home_page.dart';
 import 'package:demo2app/pages/login_page.dart';
+import 'package:demo2app/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -10,7 +11,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  //const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +30,12 @@ class MyApp extends StatelessWidget {
           //brightness: Brightness.dark,
           //primarySwatch: Colors.brown),
           ),
-      initialRoute: "/",
+      initialRoute: Myroutes.loginroute,
       routes: {
         "/": (context) => LoginPage(),
-        "/home": (context) => Homepage(),
-        "/login": (context) => LoginPage(),
+        //"/home": (context) => Homepage()
+        Myroutes.homeroute: (context) => Homepage(),
+        Myroutes.loginroute: (context) => LoginPage(),
       },
     );
   }
