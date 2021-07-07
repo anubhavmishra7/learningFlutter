@@ -8,12 +8,13 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        //elevation: 0,
         title: Text(
           "Catalog",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor: Colors.indigo,
+        // backgroundColor: Colors.white,
         actions: [Icon(Icons.login), Icon(Icons.logout)],
         //leading: Icon(Icons.holiday_village),
       ),
