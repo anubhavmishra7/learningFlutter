@@ -19,13 +19,21 @@ class Homepage extends StatelessWidget {
         //leading: Icon(Icons.holiday_village),
       ),
       body: Center(
-        child: Container(
-            // child: Text(
-            //   'Home Screen',
-            //   style: TextStyle(
-            //       fontSize: 40, color: Colors.red, fontWeight: FontWeight.bold),
-            // ),
-            ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'this here is a Homescreen',
+              style: TextStyle(
+                fontSize: 19,
+                color: Colors.black,
+                //fontWeight: FontWeight.bold),
+              ),
+            )
+
+            // Image(image: image)
+          ],
+        ),
       ),
 
       //for adding drawer in appbar => drawer: Drawer(),
